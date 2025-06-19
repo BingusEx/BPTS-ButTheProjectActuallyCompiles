@@ -97,10 +97,13 @@ namespace Hooks
 				// move objectRef into register
 				//mov(ptr[r15 + 4], eax);
 
-				mov(rcx, eax);
+				//BingusEX;
+				//rcx is 64 bit 32 -> 64 bit mov throws ERR_BAD_SIZE_OF_REGISTER
+				//mov(rcx, eax);
+				mov(ecx, eax);
 
 				// call OnSetCrosshairTargetRef
-				mov(rax, (size_t)&OnSetCrosshairTargetRef);
+				mov(rax, reinterpret_cast<size_t>(&OnSetCrosshairTargetRef));
 				call(rax);
 
 				// move return value into rbx
