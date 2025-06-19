@@ -4,6 +4,7 @@ function(add_cxx_files TARGET)
 		CONFIGURE_DEPENDS
 		"include/*.h"
 		"include/*.hpp"
+		"include/*.h"
 		"include/*.hxx"
 		"include/*.inl"
 	)
@@ -19,6 +20,7 @@ function(add_cxx_files TARGET)
 		CONFIGURE_DEPENDS
 		"src/*.h"
 		"src/*.hpp"
+		"src/*.h"
 		"src/*.hxx"
 		"src/*.inl"
 	)

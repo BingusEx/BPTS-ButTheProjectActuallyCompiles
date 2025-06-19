@@ -1,5 +1,5 @@
 {
-  "name": "templateplugin",
+  "name": "bpts",
   "version-string": "1.0.0",
   "description": "",
   "features": {
@@ -13,8 +13,8 @@
         "rapidcsv",
         "spdlog",
         "clib-util",
-        "toml11",
-        "nlohmann-json"
+        "glm",
+        "magic-enum"
       ]
     }
   },
